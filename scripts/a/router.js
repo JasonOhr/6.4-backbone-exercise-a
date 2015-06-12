@@ -2,11 +2,11 @@
  * Created by firewaterjoe on 6/11/15.
  */
     
-import {APostsCollection} from './models/post';
+import APostsCollection from './models/post';
 import AView from './view/index';
 var Router = Backbone.Router.extend({
    routes:{
-       '': 'index'
+       'a': 'index'
    },
     initialize: function(){
         this.post = new APostsCollection();
@@ -14,8 +14,8 @@ var Router = Backbone.Router.extend({
     },
     index: function(){
         this.post.fetch();
-        console.log(this.post);
-        $('#app').append(new AView({collection:this.post}).el);
+
+        $('#app').html(new AView({collection:this.post}).el);
     }
 
 });

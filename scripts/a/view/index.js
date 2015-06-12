@@ -19,7 +19,7 @@ var View =Backbone.View.extend({
         this.collection.create({
 
             title: $('.title').val(),
-            content: $('.content').val(),
+            content: $('.content').val()
 
         });
         this.clearContent();

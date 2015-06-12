@@ -1,4 +1,5 @@
-import router from './a/router'
+import routerA from './a/router'
+import routerB from './b/router'
 (function(){
   'use strict';
 

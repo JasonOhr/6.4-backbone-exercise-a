@@ -20,4 +20,4 @@ var APostsCollection =  Backbone.Collection.extend({
    model: APost
 });
 
-export default {APost, APostsCollection};
+export default APostsCollection;
