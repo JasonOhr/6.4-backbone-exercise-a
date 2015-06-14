@@ -2,7 +2,7 @@
  * Created by firewaterjoe on 6/14/15.
  */
 import {Blog,BlogCollection} from './models/dModel';
-import {SidebarView, BlogContentView} from './view/dView';
+import {SidebarView, BlogContentView,TagsForm} from './view/dView';
 var Router = Backbone.Router.extend({
     routes: {
         'd':'showBlogList',
@@ -10,6 +10,7 @@ var Router = Backbone.Router.extend({
     },
     initialize: function(){
         this.blogCollection = new BlogCollection();
+
     },
     showBlogList: function(){
         this.blogCollection.fetch().then(function(){
@@ -22,6 +23,7 @@ var Router = Backbone.Router.extend({
         this.blogCollection.fetch().then(function(){
             this.model = this.blogCollection.get(id);
             $('.content').html(new BlogContentView({model: this.model}).el);
+
         }.bind(this));
     }
 

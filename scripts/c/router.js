@@ -14,6 +14,7 @@ Router = Backbone.Router.extend({
     },
     initialize: function () {
         this.blogCollection = new BlogCollection();
+
     },
     showBlogList: function () {
 
@@ -28,9 +29,11 @@ Router = Backbone.Router.extend({
         this.blogCollection.fetch().then(function(){
 
             this.model = this.blogCollection.get(id);
-            $('.content').html(new BlogContentView({model:this.model}).el)
+            $('.content').html(new BlogContentView({model:this.model}).el);
 
-        }.bind(this));
+
+        }.bind(this))
+
     }
 });
 

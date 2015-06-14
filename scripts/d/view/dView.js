@@ -2,7 +2,7 @@
  * Created by firewaterjoe on 6/14/15.
  */
 var SidebarView =  Backbone.View.extend({
-   template: JST.cSidebar,
+   template: JST.dSidebar,
     initialize: function () {
         this.render();
     },
@@ -13,7 +13,7 @@ var SidebarView =  Backbone.View.extend({
 });
 
 var BlogContentView = Backbone.View.extend({
-    template: JST.cTemp,
+    template: JST.dTemp,
     initialize: function(){
         this.render();
     },
@@ -23,5 +23,14 @@ var BlogContentView = Backbone.View.extend({
         ));
     }
 });
+var TagsForm = Backbone.View.extend({
+    template: JST.tagForm,
+    initialize: function(){
+        this.render();
+    },
+    render: function(){
+        this.$el.html(this.template());
+    }
+});
 
-export default {SidebarView, BlogContentView}
+export default {SidebarView, BlogContentView,TagsForm}

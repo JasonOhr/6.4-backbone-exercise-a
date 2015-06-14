@@ -32,4 +32,9 @@ body {
 .content {
   @include span-columns(10 of 12);
   border: 1px solid $dark-gray;
+  @include omega();
+}
+.tag-form {
+  @include span-columns(10);
+  @include shift(2);
 }
