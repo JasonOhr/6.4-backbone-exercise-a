@@ -1,7 +1,9 @@
 /**
  * Created by firewaterjoe on 6/11/15.
  */
-//first name, last name, address, and phone number
+
+//================= B router =================
+
 import BView from './view/bView';
 import PeopleCollection from './models/bModel'
 var Router = Backbone.Router.extend({

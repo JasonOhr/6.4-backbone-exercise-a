@@ -3,7 +3,7 @@
  */
 var APost = Backbone.Model.extend({
    idAttribute: '_id',
-   urlRoot: 'http://tiny-lasagna-server.herokuapp.com/collections/jason_o',
+   urlRoot: 'http://tiny-lasagna-server.herokuapp.com/collections/jason_blogs',
    defaults: function(){
       return{
 
@@ -16,7 +16,7 @@ var APost = Backbone.Model.extend({
 
 var APostsCollection =  Backbone.Collection.extend({
    idAttribute: '_id',
-   url: 'http://tiny-lasagna-server.herokuapp.com/collections/jason_o',
+   url: 'http://tiny-lasagna-server.herokuapp.com/collections/jason_blogs',
    model: APost
 });
 

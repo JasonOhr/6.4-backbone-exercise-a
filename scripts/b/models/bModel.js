@@ -14,7 +14,7 @@ var Person = Backbone.Model.extend({
 });
 var PeopleCollection = Backbone.Collection.extend({
    model: Person,
-    url: 'http://tiny-lasagna-server.herokuapp.com/collections/jason_o'
+    url: 'http://tiny-lasagna-server.herokuapp.com/collections/jason_people'
 });
 
 export default PeopleCollection;

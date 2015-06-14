@@ -19,3 +19,13 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
 }
+.container {
+  @include outer-container(980px);
+  border: 1px solid $dark-gray;
+}
+.sidebar {
+  @include span-columns(2);
+}
+.content {
+  @include span-columns(10);
+}

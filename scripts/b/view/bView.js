@@ -14,7 +14,7 @@ export default Backbone.View.extend({
         this.$el.html(this.template());
     },
     createPerson: function(e){
-        console.log('nuthin');
+
      e.preventDefault();
         this.collection.create({
             first_name: $('.first-name').val(),
