@@ -14,7 +14,13 @@ var SidebarView = Backbone.View.extend ({
 });
 
 var BlogContentView = Backbone.View.extend ({
-
+    template:JST.cTemp,
+    initialize: function(){
+        this.render();
+    },
+    render: function(){
+        this.$el.html(this.template(this.model.toJSON()));
+    }
 });
 
 export default {SidebarView, BlogContentView};//Sidebar is the collection of posts and BlogContent is a single post

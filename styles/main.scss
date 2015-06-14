@@ -23,9 +23,13 @@ body {
   @include outer-container(980px);
   border: 1px solid $dark-gray;
 }
+.blog-area {
+
+}
 .sidebar {
-  @include span-columns(2);
+  @include span-columns(2 of 12);
 }
 .content {
-  @include span-columns(10);
+  @include span-columns(10 of 12);
+  border: 1px solid $dark-gray;
 }
