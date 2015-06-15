@@ -36,5 +36,5 @@ body {
 }
 .tag-form {
   @include span-columns(10);
-  @include shift(2);
+ // @include shift(2);
 }

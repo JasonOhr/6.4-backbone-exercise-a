@@ -3,7 +3,9 @@
  */
 var Blog = Backbone.Model.extend({
     idAttribute: '_id',
-    tags:[]
+    defaults:{
+        tags:['crap']
+    }
 
 });
 var BlogCollection = Backbone.Collection.extend({
