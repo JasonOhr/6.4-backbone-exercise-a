@@ -19,3 +19,122 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
 }
+.nav-buttons {
+  width: 720px;
+  margin: 10px auto;
+
+}
+.nav-buttons div {
+  padding: 6px 0;
+  margin: 7px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid $dark-gray;
+  border-radius: 4px;
+  background-color: $light-gray;
+
+
+}
+.nav-buttons a {
+  text-decoration: none;
+  padding: 20px;
+}
+.container {
+  @include outer-container(980px);
+  border: 1px solid $dark-gray;
+}
+.blog-area {
+
+}
+.sidebar {
+  @include span-columns(2 of 12);
+}
+.content {
+  @include span-columns(10 of 12);
+  border: 1px solid $dark-gray;
+  @include omega();
+}
+.tag-form {
+  @include span-columns(10);
+ // @include shift(2);
+}
+.blog-single {
+  width: 190px;
+  height: 150px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 2px solid $dark-gray;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+
+
+
+
+}
+.blog-single h1 {
+
+  color: $dark-gray;
+  text-align: center;
+  font-size: 20px;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blog-single a {
+  text-decoration: none;
+
+}
+.blog-content {
+  color: $dark-gray;
+  padding: 0 8px;
+}
+.multi-container {
+  margin: 20px 50px;
+}
+.add-blog {
+  height: 40px;
+  /* width: 100%; */
+  background-color: gray;
+  margin: 10px -50px;
+}
+.add-blog span{
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 30px;
+
+}
+span.back {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.add-blog a {
+  color: $dark-gray;
+  text-decoration: none;;
+}
+.post-form {
+  min-height: 135px;
+  position: relative;
+
+}
+.post-form .title,
+.post-form .content{
+  height: 35px;
+}
+.post-form .title {
+  width: 300px;
+  margin-bottom: 20px;
+
+}
+.post-form .content {
+  border: 2px inset;
+}
+.post-form button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
